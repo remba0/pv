@@ -1,0 +1,101 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07-sep-2018, 10:42:57
+    Author     : Rembao
+*/
+
+   /*
+body{
+    
+ background: rgba(183,222,237,1);
+    background: -moz-linear-gradient(left, rgba(183,222,237,1) 0%, rgba(183,222,237,1) 6%, rgba(183,222,237,1) 14%, rgba(33,180,226,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(183,222,237,1)), color-stop(6%, rgba(183,222,237,1)), color-stop(14%, rgba(183,222,237,1)), color-stop(100%, rgba(33,180,226,1)));
+    background: -webkit-linear-gradient(left, rgba(183,222,237,1) 0%, rgba(183,222,237,1) 6%, rgba(183,222,237,1) 14%, rgba(33,180,226,1) 100%);
+    background: -o-linear-gradient(left, rgba(183,222,237,1) 0%, rgba(183,222,237,1) 6%, rgba(183,222,237,1) 14%, rgba(33,180,226,1) 100%);
+    background: -ms-linear-gradient(left, rgba(183,222,237,1) 0%, rgba(183,222,237,1) 6%, rgba(183,222,237,1) 14%, rgba(33,180,226,1) 100%);
+    background: linear-gradient(to right, rgba(183,222,237,1) 0%, rgba(183,222,237,1) 6%, rgba(183,222,237,1) 14%, rgba(33,180,226,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#21b4e2', GradientType=1 );
+    
+}
+*/
+
+html,
+body{
+    height: 100%;
+}
+
+:root {
+  --jumbotron-padding-y: 3rem;
+ 
+}
+
+
+
+
+
+.jumbotron {
+  margin-bottom: 0;
+  background-color: black;
+  /** agregado **/ 
+  
+  background-image: url('../../../resources/img/background/colores.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  height: 100%;
+  /* object-fit: cover; */
+  /*filter: grayscale(70%);*/
+    
+}
+
+
+
+
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  
+  max-width: 30rem; 
+  background: rgba(0,0,0,0.6);
+  padding: 2rem;
+  color: white;
+  
+
+}
+
+input[type="text"]{
+    background: rgba(0,0,0,0.4);
+    color: whitesmoke;
+}
+
+input[type="text"]:focus{
+    background: rgba(0,0,0,0.4);
+    color: whitesmoke;
+}
+
+input[type="password"]{
+    background: rgba(0,0,0,0.4);
+    color: whitesmoke;
+}
+
+input[type="password"]:focus{
+    background: rgba(0,0,0,0.4);
+    color: whitesmoke;
+}
+
