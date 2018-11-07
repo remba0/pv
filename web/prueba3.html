@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="resources/js/jquery/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript">
+            const API_URL = 'https://swapi.co/api/'
+            const PEOPLE_URL = 'people/:id'
+
+            const lukeUrl = `${API_URL}${PEOPLE_URL.replace(':id', 1)}`
+            const opts = {crossDomain: true}
+
+            //const onPeopleResponse = (persona) => {
+            //    console.log(`Hola yo soy, ${persona.name}`)
+            //}
+
+            //$.get(lukeUrl, opts, onPeopleResponse)
+
+            function obtenerPersonaje(id) {
+
+                return new Promise((resolve, reject) => {
+                    const url = `${API_URL}${PEOPLE_URL.replace(':id', id)}`
+                    $
+                    .get(url, opts, function (data) {
+                        resolve(data)
+                    })
+                    .fail(() => reject(id))
+
+                })
+
+            }
+            
+            function onError(id){
+                console.log(`Sucedio un error al obtener el personaje ${id}`)
+            }
+
+            obtenerPersonaje(1)
+                    .then(function(personaje){
+                         console.log(`Hola yo soy el personaje 1, ${personaje.name}`)
+                         return obtenerPersonaje(2)
+                    })
+                    .then(function(personaje2){
+                         console.log(`Hola yo soy el personaje 2, ${personaje2.name}`)
+                         return obtenerPersonaje(3)
+                    })
+                    .then(function(personaje3){
+                         console.log(`Hola yo soy el personaje 3, ${personaje3.name}`)
+                         return obtenerPersonaje(4)
+                    })
+                    .then(function(personaje4){
+                         console.log(`Hola yo soy el personaje 4, ${personaje4.name}`)
+                         return obtenerPersonaje(5)
+                    })
+                    .then(function(personaje5){
+                         console.log(`Hola yo soy el personaje 5, ${personaje5.name}`)
+                         return obtenerPersonaje(6)
+                    })
+                    .then(function(personaje6){
+                         console.log(`Hola yo soy el personaje 6, ${personaje6.name}`)
+                         return obtenerPersonaje(7)
+                    })
+                    .then(function(personaje7){
+                         console.log(`Hola yo soy el personaje 7, ${personaje7.name}`)
+                         
+                    })
+                    .catch(onError)
+            
+
+        </script>
+    </head>
+    <body>
+        <div>TODO write content</div>
+    </body>
+</html>

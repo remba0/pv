@@ -2,6 +2,14 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/home/charly/NetBeansProjects/pv/web/prueba3.html</file>
+            <file>file:/home/charly/NetBeansProjects/pv/src/java/mx/com/rembao/pv/servlet/PuntoVenta.java</file>
+            <file>file:/home/charly/NetBeansProjects/pv/web/WEB-INF/views/pv/puntoVenta.jsp</file>
+            <file>file:/home/charly/NetBeansProjects/pv/web/prueba.html</file>
+            <file>file:/home/charly/NetBeansProjects/pv/web/resources/js/pv/puntoVenta.js</file>
+            <file>file:/home/charly/NetBeansProjects/pv/src/java/mx/com/rembao/pv/servlet/BuscaProducto.java</file>
+            <file>file:/home/charly/NetBeansProjects/pv/web/prueba2.html</file>
+        </group>
     </open-files>
 </project-private>

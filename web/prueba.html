@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="resources/js/jquery/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript">
+            const API_URL = 'https://swapi.co/api/'
+            const PEOPLE_URL = 'people/:id'
+            
+            const lukeUrl = `${API_URL}${PEOPLE_URL.replace(':id',1)}`
+            const opts = { crossDomain: true }
+            
+            const onPeopleResponse = (persona) => {
+                console.log(`Hola yo soy, ${persona.name}`)
+            }
+            
+            //$.get(lukeUrl, opts, onPeopleResponse)
+            
+            function obtenerPersonaje(id){
+                const url = `${API_URL}${PEOPLE_URL.replace(':id',id)}`
+                $.get(url, opts, onPeopleResponse)
+                
+            }
+            
+            obtenerPersonaje(1)
+            obtenerPersonaje(2)
+            obtenerPersonaje(3)
+            
+            
+        </script>
+    </head>
+    <body>
+        <div>TODO write content</div>
+    </body>
+</html>

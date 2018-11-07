@@ -28,7 +28,7 @@
 
     <!-- Custom styles for this template-->
     <link href="template/css/sb-admin.css" rel="stylesheet">
-
+    
   </head>
 
   <body class="bg-dark">

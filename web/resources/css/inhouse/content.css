@@ -270,3 +270,16 @@ body.sidebar-toggled footer.sticky-footer {
     width: calc(100% - 90px);
   }
 }
+
+.input-text-small{
+    max-width: 18.6rem;
+}
+
+.select-small{
+    max-width: 18.6rem;
+}
+
+.input-text-small.input-cantidad{
+    max-width: 18.6rem;
+    text-align: right;
+}
